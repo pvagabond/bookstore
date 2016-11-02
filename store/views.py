@@ -8,5 +8,7 @@ def index(req):
 
 def store(req):
     count = Book.objects.all().count()
-    context = { 'count' : count }
-    return render(req, 'store.html', context)
+    context = {
+        'count' : count,
+    }
+    return render(req, 'base.html', context)
