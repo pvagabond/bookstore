@@ -9,5 +9,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^store/', include('store.urls'), name='store'),
     url(r'^accounts/', include('registration.backends.default.urls')),
-    url(r'^$', 'store.views.index', name='index'),
+    url(r'', include('social.apps.django_app.urls', namespace='social')),
 ]
