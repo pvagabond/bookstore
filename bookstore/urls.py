@@ -10,4 +10,6 @@ urlpatterns = [
     url(r'^store/', include('store.urls'), name='store'),
     url(r'^accounts/', include('registration.backends.default.urls')),
     url(r'', include('social.apps.django_app.urls', namespace='social')),
+
+
 ]
