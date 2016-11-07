@@ -19,6 +19,11 @@ class Book(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=8)
     stock = models.IntegerField(default=0)
 
+    def cover_upload_path(instance, filename):
+        return '/'.join(['books', str(instance.id), filename])
+
+    cover_image = models.ImageField(upload_to=cover_upload_path, default='books/empty_cover.jpg')
+
 
 class Review(models.Model):
     book = models.ForeignKey(Book)
