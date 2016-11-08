@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
     'social.apps.django_app.default',
     'compressor',
     'registration',
@@ -142,3 +143,5 @@ DEFAULT_FROM_EMAIL = "books@coconut.com"
 #Socail Auth - Facebook
 SOCIAL_AUTH_FACEBOOK_KEY = "565003347021524"
 SOCIAL_AUTH_FACEBOOK_SECRET = "51497aa271bfe2df5a03d25e3bbefeea"
+
+GEOIP_PATH = 'geo/'
