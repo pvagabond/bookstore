@@ -132,9 +132,9 @@ LOGIN_REDIRECT_URL = '/store/'
 
 #Email settings
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "cariboudenali@gmail.com"
-EMAIL_HOST_PASSWORD = "Sn0wsh0eh@re"
+EMAIL_HOST = "smtp.mailgun.org"
+EMAIL_HOST_USER = "postmaster@sandboxbdb033730d3c4e08a522e3eeef60eddc.mailgun.org"
+EMAIL_HOST_PASSWORD = "92dd9cf7e38bf92454d04231c61a5528"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "books@coconut.com"
