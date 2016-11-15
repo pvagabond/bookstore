@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'social.apps.django_app.default',
     'compressor',
     'registration',
+    'tastypie',
     'bootstrap3',
     'bootstrap_themes',
     'store',
