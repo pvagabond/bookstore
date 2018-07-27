@@ -232,7 +232,6 @@ def order_error(req):
     else:
         return redirect('index')
 
-
 def process_order(req, processor):
     if req.user.is_authenticated():
         if processor == 'paypal':
